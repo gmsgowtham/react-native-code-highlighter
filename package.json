@@ -72,7 +72,7 @@
     "prettier": "2.0.5",
     "react": "18.2.0",
     "react-native": "0.71.8",
-    "react-native-builder-bob": "0.20.0",
+    "react-native-builder-bob": "0.20.4",
     "react-test-renderer": "18.2.0",
     "release-it": "15.10.3",
     "typescript": "5.0.4"
