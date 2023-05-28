@@ -1,3 +1,3 @@
-import CodeHighlighter from './lib/CodeHighlighter';
+import CodeHighlighter from "./lib/CodeHighlighter";
 
 export default CodeHighlighter;
