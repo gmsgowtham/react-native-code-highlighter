@@ -4,7 +4,11 @@ pre-commit:
     lint:
       files: git diff --name-only @{push}
       glob: "*.{js,ts,jsx,tsx}"
-      run: npx eslint {files}
+      run: yarn run rome check {staged_files}
+    format:
+      files: git diff --name-only @{push}
+      glob: "*.{js,ts,jsx,tsx}"
+      run: yarn run rome format {staged_files} --write && git add {staged_files}
     types:
       files: git diff --name-only @{push}
       glob: "*.{js,ts, jsx, tsx}"
