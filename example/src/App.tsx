@@ -1,18 +1,11 @@
 import * as React from 'react';
-
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-code-highlighter';
+import { StyleSheet, View } from 'react-native';
+import CodeHighlighter from 'react-native-code-highlighter';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
-
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <CodeHighlighter code={`var a = "2342";`} containerStyle={styles.code} />
     </View>
   );
 }
@@ -23,9 +16,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
-  },
+  code: { width: '100%', padding: 8 },
 });
