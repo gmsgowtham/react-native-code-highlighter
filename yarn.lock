@@ -8141,10 +8141,10 @@ pkg-dir@^4.2.0:
   dependencies:
     find-up "^4.0.0"
 
-pod-install@0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/pod-install/-/pod-install-0.1.0.tgz#a3427aa3e26ad9aa7e6e141493c27b839d813d26"
-  integrity sha512-bOE7yQyJxkck/YYlYdwXcwZPg/SHReO8G8l1EpCdN7ASdC/eqgkKd4smIc2j7kRLtKCYB+WrzP4bzVajLPqziQ==
+pod-install@0.1.38:
+  version "0.1.38"
+  resolved "https://registry.yarnpkg.com/pod-install/-/pod-install-0.1.38.tgz#1c16a800a5fc1abea0cafcc0e190f376368c76ab"
+  integrity sha512-NeDWGigjJRriOIKBOvpW2/tK2tYLfyUT7ia6C6L+oarCAhBNP+IGODWdU+GEAqvfsseqOApcFclpXAJTL0UPzA==
 
 posix-character-classes@^0.1.0:
   version "0.1.1"
