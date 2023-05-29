@@ -21,7 +21,7 @@
     "@babel/core": "^7.20.0",
     "@expo/webpack-config": "^18.0.1",
     "@types/react-syntax-highlighter": "^15.5.7",
-    "babel-loader": "^8.1.0",
+    "babel-loader": "^9.0.0",
     "babel-plugin-module-resolver": "^5.0.0"
   },
   "private": true
