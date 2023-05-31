@@ -1,9 +1,4 @@
-import React, {
-	useMemo,
-	type FunctionComponent,
-	type ReactNode,
-	type CSSProperties,
-} from "react";
+import React, { useMemo, type FunctionComponent, type ReactNode } from "react";
 import {
 	Text,
 	View,
@@ -18,10 +13,11 @@ import { trimNewlines } from "trim-newlines";
 import {
 	getRNStylesFromHljsStyle,
 	type HighlighterStyleSheet,
+	type ReactStyle,
 } from "./../utils/styles";
 
 export interface CodeHighlighterProps extends SyntaxHighlighterProps {
-	hljsStyle: Record<string, CSSProperties>;
+	hljsStyle: ReactStyle;
 	containerStyle?: ViewStyle;
 	textStyle?: TextStyle;
 }

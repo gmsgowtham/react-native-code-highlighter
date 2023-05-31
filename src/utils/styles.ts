@@ -3,7 +3,7 @@ import type { TextStyle } from "react-native";
 import transform, { type StyleTuple } from "css-to-react-native";
 
 export type HighlighterStyleSheet = { [key: string]: TextStyle };
-export type hljsStyleProp = Record<string, CSSProperties>;
+export type ReactStyle = Record<string, CSSProperties>;
 
 const ALLOWED_STYLE_PROPERTIES: Record<string, boolean> = {
 	color: true,
@@ -14,7 +14,7 @@ const ALLOWED_STYLE_PROPERTIES: Record<string, boolean> = {
 };
 
 export const getRNStylesFromHljsStyle = (
-	hljsStyle: Record<string, CSSProperties>,
+	hljsStyle: ReactStyle,
 ): HighlighterStyleSheet => {
 	return Object.fromEntries(
 		Object.entries(hljsStyle).map(([className, style]) => [
