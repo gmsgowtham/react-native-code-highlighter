@@ -58,7 +58,7 @@
     "@commitlint/config-conventional": "17.6.5",
     "@evilmartians/lefthook": "1.4.1",
     "@release-it/conventional-changelog": "5.1.1",
-    "@types/jest": "29.5.1",
+    "@types/jest": "29.5.2",
     "@types/react": "18.2.7",
     "@types/react-native": "0.72.2",
     "@types/react-syntax-highlighter": "15.5.7",
