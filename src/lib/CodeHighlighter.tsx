@@ -1,107 +1,95 @@
-import React, { useMemo, type FunctionComponent, type ReactNode } from "react";
+import React, {
+	useMemo,
+	type FunctionComponent,
+	type ReactNode,
+	type CSSProperties,
+} from "react";
 import {
-  Text,
-  View,
-  useColorScheme,
-  ScrollView,
-  type ViewStyle,
-  type TextStyle,
+	Text,
+	View,
+	ScrollView,
+	type ViewStyle,
+	type TextStyle,
 } from "react-native";
-import {
-  type SyntaxHighlighterProps,
+import SyntaxHighlighter, {
+	type SyntaxHighlighterProps,
 } from "react-syntax-highlighter";
-import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight";
+import { trimNewlines } from "trim-newlines";
 import {
-  stackoverflowLight as lightStyle,
-  stackoverflowDark as darkStyle,
-} from "react-syntax-highlighter/dist/esm/styles/hljs";
-import transform, { type StyleTuple } from "css-to-react-native";
+	getRNStylesFromHljsStyle,
+	type HighlighterStyleSheet,
+} from "./../utils/styles";
 
-type HighlighterStyleSheet = { [key: string]: TextStyle };
-
-interface CodeHighlighterProps extends Partial<SyntaxHighlighterProps> {
-  code: string | string[];
-  containerStyle?: ViewStyle;
-  textStyle?: TextStyle;
+export interface CodeHighlighterProps extends SyntaxHighlighterProps {
+	hljsStyle: Record<string, CSSProperties>;
+	containerStyle?: ViewStyle;
+	textStyle?: TextStyle;
 }
 
 export const CodeHighlighter: FunctionComponent<CodeHighlighterProps> = ({
-  code,
-  containerStyle,
-  textStyle,
-  ...rest
+	children,
+	containerStyle,
+	textStyle,
+	hljsStyle = {},
+	...rest
 }) => {
-  const colorScheme = useColorScheme();
+	const stylesheet: HighlighterStyleSheet = useMemo(
+		() => getRNStylesFromHljsStyle(hljsStyle),
+		[hljsStyle],
+	);
 
-  const cleanStyle = (style: React.CSSProperties) => {
-    const styles = Object.entries(style).map<StyleTuple>(([key, value]) => [
-      key,
-      value,
-    ]);
+	const getStylesForNode = (node: rendererNode): TextStyle[] => {
+		const classes: string[] = node.properties?.className || [];
+		return classes
+			.map<TextStyle | undefined>((c: string) => stylesheet[c])
+			.filter((c) => !!c) as TextStyle[];
+	};
 
-    return transform(styles);
-  };
+	const renderNode = (nodes: rendererNode[], keyPrefix = "row") =>
+		nodes.reduce<ReactNode[]>((acc, node, index) => {
+			const keyPrefixWithIndex = `${keyPrefix}_${index}`;
+			if (node.children) {
+				const styles = [
+					{ ...textStyle, color: stylesheet.hljs?.color },
+					getStylesForNode(node),
+				];
+				acc.push(
+					<Text style={styles} key={keyPrefixWithIndex}>
+						{renderNode(node.children, `${keyPrefixWithIndex}_child`)}
+					</Text>,
+				);
+			}
 
-  const hlsStyles = useMemo(
-    () => (colorScheme === "light" ? lightStyle : darkStyle),
-    [colorScheme],
-  );
+			if (node.value) {
+				acc.push(trimNewlines(String(node.value)));
+			}
 
-  const stylesheet: HighlighterStyleSheet = useMemo(
-    () =>
-      Object.fromEntries(
-        Object.entries(hlsStyles).map(([className, style]) => [
-          className,
-          cleanStyle(style),
-        ]),
-      ),
-    [hlsStyles],
-  );
+			return acc;
+		}, []);
 
-  const renderNode = (nodes: rendererNode[], keyPrefix = "row") =>
-    nodes.reduce<ReactNode[]>((acc, node, index) => {
-      const keyPrefixWithIndex = `${keyPrefix}_${index}`;
-      if (node.children) {
-        const styles = [
-          { color: stylesheet.hljs?.color, ...textStyle }, // default style for fallback
-          ...(node.properties?.className || [])
-            .map((c) => stylesheet[c])
-            .filter((c) => !!c), // fetch styles from element class name
-        ];
-        acc.push(
-          <Text style={styles} key={keyPrefixWithIndex}>
-            {renderNode(node.children, `${keyPrefixWithIndex}_child`)}
-          </Text>,
-        );
-      }
+	const nativeRenderer = (props: rendererProps) => {
+		const { rows } = props;
+		return (
+			<ScrollView
+				horizontal
+				contentContainerStyle={[stylesheet.hljs, containerStyle]}
+			>
+				<View>{renderNode(rows)}</View>
+			</ScrollView>
+		);
+	};
 
-      if (node.value) {
-        acc.push(<Text key={keyPrefixWithIndex}>{node.value}</Text>);
-      }
-
-      return acc;
-    }, []);
-
-  const nativeRenderer = (props: rendererProps) => {
-    const { rows } = props;
-    return (
-      <ScrollView horizontal contentContainerStyle={containerStyle}>
-        <View>{renderNode(rows)}</View>
-      </ScrollView>
-    );
-  };
-
-  return (
-    <SyntaxHighlighter
-      {...rest}
-      renderer={nativeRenderer}
-      CodeTag={View}
-      PreTag={View}
-      style={{}}
-    >
-      {code}
-    </SyntaxHighlighter>
-  );
+	return (
+		<SyntaxHighlighter
+			{...rest}
+			renderer={nativeRenderer}
+			CodeTag={View}
+			PreTag={View}
+			style={{}}
+		>
+			{children}
+		</SyntaxHighlighter>
+	);
 };
 
 export default CodeHighlighter;

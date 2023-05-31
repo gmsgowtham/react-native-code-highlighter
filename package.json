@@ -2,19 +2,19 @@
   "name": "react-native-code-highlighter",
   "version": "0.1.0",
   "description": "test",
-  "main": "lib/commonjs/index",
-  "module": "lib/module/index",
-  "types": "lib/typescript/index.d.ts",
+  "main": "dist/commonjs/index",
+  "module": "dist/module/index",
+  "types": "dist/typescript/index.d.ts",
   "react-native": "src/index",
   "source": "src/index",
   "files": [
     "src",
-    "lib",
+    "dist",
     "android",
     "ios",
     "cpp",
     "*.podspec",
-    "!lib/typescript/example",
+    "!dist/typescript/example",
     "!ios/build",
     "!android/build",
     "!android/gradle",
@@ -90,7 +90,7 @@
     "preset": "react-native",
     "modulePathIgnorePatterns": [
       "<rootDir>/example/node_modules",
-      "<rootDir>/lib/"
+      "<rootDir>/dist/"
     ]
   },
   "commitlint": {
@@ -117,7 +117,7 @@
   },
   "react-native-builder-bob": {
     "source": "src",
-    "output": "lib",
+    "output": "dist",
     "targets": [
       "commonjs",
       "module",
@@ -131,6 +131,7 @@
   },
   "dependencies": {
     "css-to-react-native": "3.2.0",
-    "react-syntax-highlighter": "15.5.0"
+    "react-syntax-highlighter": "15.5.0",
+    "trim-newlines": "5.0.0"
   }
 }
