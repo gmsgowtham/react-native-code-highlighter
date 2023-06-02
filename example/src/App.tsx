@@ -1,8 +1,7 @@
 import * as React from "react";
 import { StyleSheet } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
 import CodeHighlighter from "react-native-code-highlighter";
-import { darcula as hljsStyle } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { atomOneDarkReasonable as hljsStyle } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 const CODE_STR = `
 import * as React from "react";
@@ -35,21 +34,23 @@ import {
 
 export default function App() {
 	return (
-		<SafeAreaView>
-			<CodeHighlighter
-				containerStyle={styles.codeContainer}
-				hljsStyle={hljsStyle}
-				language="typescript"
-			>
-				{CODE_STR}
-			</CodeHighlighter>
-		</SafeAreaView>
+		<CodeHighlighter
+			containerStyle={styles.codeContainer}
+			textStyle={styles.text}
+			hljsStyle={hljsStyle}
+			language="typescript"
+		>
+			{CODE_STR}
+		</CodeHighlighter>
 	);
 }
 
 const styles = StyleSheet.create({
 	codeContainer: {
-		paddingHorizontal: 16,
+		padding: 16,
 		minWidth: "100%",
+	},
+	text: {
+		fontSize: 16,
 	},
 });
