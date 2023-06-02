@@ -4,6 +4,7 @@ Code/Syntax highlighter for React Native. Inspired by [react-native-syntax-highl
 
 ![GitHub](https://img.shields.io/github/license/gmsgowtham/react-native-code-highlighter)
 [![CI](https://github.com/gmsgowtham/react-native-code-highlighter/actions/workflows/ci.yml/badge.svg)](https://github.com/gmsgowtham/react-native-code-highlighter/actions/workflows/ci.yml)
+[![Coverage Status](https://coveralls.io/repos/github/gmsgowtham/react-native-code-highlighter/badge.svg?branch=main)](https://coveralls.io/github/gmsgowtham/react-native-code-highlighter?branch=main)
 ![npm](https://img.shields.io/npm/v/react-native-code-highlighter)
 ![npm](https://img.shields.io/npm/dw/react-native-code-highlighter)
 
