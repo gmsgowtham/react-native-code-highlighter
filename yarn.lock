@@ -2186,6 +2186,13 @@
   dependencies:
     defer-to-connect "^2.0.1"
 
+"@testing-library/react-native@12.1.2":
+  version "12.1.2"
+  resolved "https://registry.yarnpkg.com/@testing-library/react-native/-/react-native-12.1.2.tgz#1935affe1106aeddf0087dff31a6d7414917c098"
+  integrity sha512-5rQMQpbSQAuJc4TxjTt1IoeT1a5eVXaa61hf/YcjV2QtGqCoyhuW8DvhTowrL7y2Ds4NzuYBmbVxjNPR6GIblw==
+  dependencies:
+    pretty-format "^29.0.0"
+
 "@tsconfig/node10@^1.0.7":
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/@tsconfig/node10/-/node10-1.0.9.tgz#df4907fc07a886922637b15e02d4cebc4c0021b2"
@@ -2327,6 +2334,13 @@
   version "15.5.7"
   resolved "https://registry.yarnpkg.com/@types/react-syntax-highlighter/-/react-syntax-highlighter-15.5.7.tgz#bd29020ccb118543d88779848f99059b64b02d0f"
   integrity sha512-bo5fEO5toQeyCp0zVHBeggclqf5SQ/Z5blfFmjwO5dkMVGPgmiwZsJh9nu/Bo5L7IHTuGWrja6LxJVE2uB5ZrQ==
+  dependencies:
+    "@types/react" "*"
+
+"@types/react-test-renderer@18.0.0":
+  version "18.0.0"
+  resolved "https://registry.yarnpkg.com/@types/react-test-renderer/-/react-test-renderer-18.0.0.tgz#7b7f69ca98821ea5501b21ba24ea7b6139da2243"
+  integrity sha512-C7/5FBJ3g3sqUahguGi03O79b8afNeSD6T8/GU50oQrJCU0bVCCGQHaGKUbg2Ce8VQEEqTw8/HiS6lXHHdgkdQ==
   dependencies:
     "@types/react" "*"
 

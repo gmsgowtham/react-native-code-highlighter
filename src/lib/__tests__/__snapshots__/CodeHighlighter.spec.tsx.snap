@@ -1,0 +1,257 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CodeHighlighter render 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#fff",
+    }
+  }
+  testID="react-native-code-highlighter"
+>
+  <View
+    className="language-typescript"
+    style={
+      {
+        "whiteSpace": "pre",
+      }
+    }
+  >
+    <RCTScrollView
+      contentContainerStyle={
+        [
+          undefined,
+          undefined,
+        ]
+      }
+      horizontal={true}
+    >
+      <View>
+        <View>
+          <Text
+            style={
+              {
+                "color": undefined,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": undefined,
+                }
+              }
+            >
+              const
+            </Text>
+            <Text
+              style={
+                {
+                  "color": undefined,
+                }
+              }
+            >
+               hello = 
+            </Text>
+            <Text
+              style={
+                {
+                  "color": undefined,
+                }
+              }
+            >
+              "world"
+            </Text>
+          </Text>
+        </View>
+      </View>
+    </RCTScrollView>
+  </View>
+</View>
+`;
+
+exports[`CodeHighlighter render with styles 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#fff",
+    }
+  }
+  testID="react-native-code-highlighter"
+>
+  <View
+    className="language-javascript"
+    style={
+      {
+        "whiteSpace": "pre",
+      }
+    }
+  >
+    <RCTScrollView
+      contentContainerStyle={
+        [
+          {
+            "backgroundColor": "#282c34",
+            "color": "#abb2bf",
+          },
+          {
+            "backgroundColor": "#000",
+            "padding": 8,
+          },
+        ]
+      }
+      horizontal={true}
+    >
+      <View>
+        <View>
+          <Text
+            style={
+              {
+                "color": "#abb2bf",
+                "fontSize": 12,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#abb2bf",
+                  "fontSize": 12,
+                }
+              }
+            />
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#abb2bf",
+                "fontSize": 12,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#abb2bf",
+                  "fontSize": 12,
+                }
+              }
+            >
+                    
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#F92672",
+                  "fontSize": 12,
+                }
+              }
+            >
+              const
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#abb2bf",
+                  "fontSize": 12,
+                }
+              }
+            >
+               hello = 
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#98c379",
+                  "fontSize": 12,
+                }
+              }
+            >
+              "world"
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#abb2bf",
+                  "fontSize": 12,
+                }
+              }
+            >
+              ;
+            </Text>
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#abb2bf",
+                "fontSize": 12,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#abb2bf",
+                  "fontSize": 12,
+                }
+              }
+            >
+                    
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#F92672",
+                  "fontSize": 12,
+                }
+              }
+            >
+              let
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#abb2bf",
+                  "fontSize": 12,
+                }
+              }
+            >
+               foo = 
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#98c379",
+                  "fontSize": 12,
+                }
+              }
+            >
+              "bar"
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#abb2bf",
+                  "fontSize": 12,
+                }
+              }
+            >
+              ;
+            </Text>
+          </Text>
+          <Text
+            style={
+              {
+                "color": "#abb2bf",
+                "fontSize": 12,
+              }
+            }
+          >
+                  
+          </Text>
+        </View>
+      </View>
+    </RCTScrollView>
+  </View>
+</View>
+`;

@@ -28,7 +28,7 @@ export const CodeHighlighter: FunctionComponent<CodeHighlighterProps> = ({
 	children,
 	containerStyle,
 	textStyle,
-	hljsStyle = {},
+	hljsStyle,
 	...rest
 }) => {
 	const stylesheet: HighlighterStyleSheet = useMemo(
@@ -37,7 +37,7 @@ export const CodeHighlighter: FunctionComponent<CodeHighlighterProps> = ({
 	);
 
 	const getStylesForNode = (node: rendererNode): TextStyle[] => {
-		const classes: string[] = node.properties?.className || [];
+		const classes: string[] = node.properties?.className ?? [];
 		return classes
 			.map((c: string) => stylesheet[c])
 			.filter((c) => !!c) as TextStyle[];
@@ -85,6 +85,7 @@ export const CodeHighlighter: FunctionComponent<CodeHighlighterProps> = ({
 			CodeTag={View}
 			PreTag={View}
 			style={{}}
+			testID="react-native-code-highlighter"
 		>
 			{children}
 		</SyntaxHighlighter>
