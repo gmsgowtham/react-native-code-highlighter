@@ -6,7 +6,7 @@ describe(CodeHighlighter, () => {
 	it("render", async () => {
 		const code = `const hello = "world"`;
 		const r = await render(
-			<CodeHighlighter hljsStyle={{}} language="typescript">
+			<CodeHighlighter hljsStyle={hljsStyle} language="typescript">
 				{code}
 			</CodeHighlighter>,
 		);

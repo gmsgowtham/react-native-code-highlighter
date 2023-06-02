@@ -20,7 +20,10 @@ exports[`CodeHighlighter render 1`] = `
     <RCTScrollView
       contentContainerStyle={
         [
-          undefined,
+          {
+            "backgroundColor": "#282c34",
+            "color": "#abb2bf",
+          },
           undefined,
         ]
       }
@@ -31,14 +34,14 @@ exports[`CodeHighlighter render 1`] = `
           <Text
             style={
               {
-                "color": undefined,
+                "color": "#abb2bf",
               }
             }
           >
             <Text
               style={
                 {
-                  "color": undefined,
+                  "color": "#F92672",
                 }
               }
             >
@@ -47,7 +50,7 @@ exports[`CodeHighlighter render 1`] = `
             <Text
               style={
                 {
-                  "color": undefined,
+                  "color": "#abb2bf",
                 }
               }
             >
@@ -56,7 +59,7 @@ exports[`CodeHighlighter render 1`] = `
             <Text
               style={
                 {
-                  "color": undefined,
+                  "color": "#98c379",
                 }
               }
             >
