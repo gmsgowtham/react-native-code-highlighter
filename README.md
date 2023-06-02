@@ -2,6 +2,11 @@
 
 Code/Syntax highlighter for React Native. Inspired by [react-native-syntax-highlighter](https://github.com/conorhastings/react-native-syntax-highlighter), using [react-syntax-highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter)
 
+![GitHub](https://img.shields.io/github/license/gmsgowtham/react-native-code-highlighter)
+[![CI](https://github.com/gmsgowtham/react-native-code-highlighter/actions/workflows/ci.yml/badge.svg)](https://github.com/gmsgowtham/react-native-code-highlighter/actions/workflows/ci.yml)
+![npm](https://img.shields.io/npm/v/react-native-code-highlighter)
+![npm](https://img.shields.io/npm/dw/react-native-code-highlighter)
+
 ## Installation
 
 #### NPM
