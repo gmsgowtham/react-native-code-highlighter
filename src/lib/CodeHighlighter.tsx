@@ -5,6 +5,8 @@ import {
 	ScrollView,
 	type ViewStyle,
 	type TextStyle,
+	type StyleProp,
+	StyleSheet,
 } from "react-native";
 import SyntaxHighlighter, {
 	type SyntaxHighlighterProps,
@@ -18,8 +20,8 @@ import {
 
 export interface CodeHighlighterProps extends SyntaxHighlighterProps {
 	hljsStyle: ReactStyle;
-	containerStyle?: ViewStyle;
-	textStyle?: TextStyle;
+	containerStyle?: StyleProp<ViewStyle>;
+	textStyle?: StyleProp<TextStyle>;
 }
 
 export const CodeHighlighter: FunctionComponent<CodeHighlighterProps> = ({
@@ -37,7 +39,7 @@ export const CodeHighlighter: FunctionComponent<CodeHighlighterProps> = ({
 	const getStylesForNode = (node: rendererNode): TextStyle[] => {
 		const classes: string[] = node.properties?.className || [];
 		return classes
-			.map<TextStyle | undefined>((c: string) => stylesheet[c])
+			.map((c: string) => stylesheet[c])
 			.filter((c) => !!c) as TextStyle[];
 	};
 
@@ -45,10 +47,11 @@ export const CodeHighlighter: FunctionComponent<CodeHighlighterProps> = ({
 		nodes.reduce<ReactNode[]>((acc, node, index) => {
 			const keyPrefixWithIndex = `${keyPrefix}_${index}`;
 			if (node.children) {
-				const styles = [
-					{ ...textStyle, color: stylesheet.hljs?.color },
+				const styles = StyleSheet.flatten([
+					textStyle,
+					{ color: stylesheet.hljs?.color },
 					getStylesForNode(node),
-				];
+				]);
 				acc.push(
 					<Text style={styles} key={keyPrefixWithIndex}>
 						{renderNode(node.children, `${keyPrefixWithIndex}_child`)}
@@ -63,7 +66,7 @@ export const CodeHighlighter: FunctionComponent<CodeHighlighterProps> = ({
 			return acc;
 		}, []);
 
-	const nativeRenderer = (props: rendererProps) => {
+	const renderer = (props: rendererProps) => {
 		const { rows } = props;
 		return (
 			<ScrollView
@@ -78,7 +81,7 @@ export const CodeHighlighter: FunctionComponent<CodeHighlighterProps> = ({
 	return (
 		<SyntaxHighlighter
 			{...rest}
-			renderer={nativeRenderer}
+			renderer={renderer}
 			CodeTag={View}
 			PreTag={View}
 			style={{}}
