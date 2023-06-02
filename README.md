@@ -55,6 +55,10 @@ const styles = StyleSheet.create({
 });
 ```
 
+## Screenshots
+
+![Image](assets/example.png?raw=true 'Image')
+
 ## Contributing
 
 See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
