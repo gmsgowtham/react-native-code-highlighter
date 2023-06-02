@@ -4,10 +4,25 @@ Code/Syntax highlighter for React Native. Inspired by [react-native-syntax-highl
 
 ## Installation
 
+#### NPM
 ```sh
-npm install react-native-code-highlighter
-or
-yarn add react-native-code-highlighter
+npm install react-native-code-highlighter react-syntax-highlighter
+```
+
+#### Yarn
+```sh
+yarn add react-native-code-highlighter react-syntax-highlighter
+```
+
+Additional for typescript
+#### NPM
+```sh
+npm install --save-dev @types/react-syntax-highlighter
+```
+
+#### Yarn
+```sh
+yarn add -D @types/react-syntax-highlighter
 ```
 
 ## Usage
