@@ -1,7 +1,6 @@
 # react-native-code-highlighter
 
 Code/Syntax highlighter for React Native. Inspired by [react-native-syntax-highlighter](https://github.com/conorhastings/react-native-syntax-highlighter), using [react-syntax-highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter)
-
 ![GitHub](https://img.shields.io/github/license/gmsgowtham/react-native-code-highlighter)
 [![CI](https://github.com/gmsgowtham/react-native-code-highlighter/actions/workflows/ci.yml/badge.svg)](https://github.com/gmsgowtham/react-native-code-highlighter/actions/workflows/ci.yml)
 [![Coverage Status](https://coveralls.io/repos/github/gmsgowtham/react-native-code-highlighter/badge.svg?branch=main)](https://coveralls.io/github/gmsgowtham/react-native-code-highlighter?branch=main)
@@ -11,22 +10,27 @@ Code/Syntax highlighter for React Native. Inspired by [react-native-syntax-highl
 ## Installation
 
 #### NPM
+
 ```sh
 npm install react-native-code-highlighter react-syntax-highlighter
 ```
 
 #### Yarn
+
 ```sh
 yarn add react-native-code-highlighter react-syntax-highlighter
 ```
 
-Additional for typescript
+> Additional for typescript
+
 #### NPM
+
 ```sh
 npm install --save-dev @types/react-syntax-highlighter
 ```
 
 #### Yarn
+
 ```sh
 yarn add -D @types/react-syntax-highlighter
 ```
@@ -34,13 +38,13 @@ yarn add -D @types/react-syntax-highlighter
 ## Usage
 
 ### Props
-| Prop                                                                                                        	| Description                                                                      	| Type                                     	| Optional 	|
-|-------------------------------------------------------------------------------------------------------------	|----------------------------------------------------------------------------------	|------------------------------------------	|----------	|
-| hljsStyle                                                                                                   	| Highlight.js style imported from `react-syntax-highlighter/dist/esm/styles/hljs` 	| `{ [key: string]: React.CSSProperties }` 	| false    	|
-| containerStyle                                                                                              	| `containerStyle` for the underlying `ScrollView`                                 	| `StyleProp<br><ViewStyle>`               	| true     	|
-| textStyle                                                                                                   	| Style for the text components. Note: `color` property will be overridden         	| `StyleProp<TextStyle>                    	| true     	|
-| [react-syntax-highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter) Props 	      | Props supported by react-syntax-highlighter                       	              |                                          	|          	|
 
+| Prop                                                                                                   | Description                                                                      | Type                                     | Optional |
+| ------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------- | ---------------------------------------- | -------- |
+| hljsStyle                                                                                              | Highlight.js style imported from `react-syntax-highlighter/dist/esm/styles/hljs` | `{ [key: string]: React.CSSProperties }` | false    |
+| containerStyle                                                                                         | `containerStyle` for the underlying `ScrollView`                                 | `StyleProp<br><ViewStyle>`               | true     |
+| textStyle                                                                                              | Style for the text components. Note: `color` property will be overridden         | `StyleProp<TextStyle>                    | true     |
+| [react-syntax-highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter) Props | Props supported by react-syntax-highlighter                                      |                                          |          |
 
 ### Example
 
@@ -76,9 +80,11 @@ const styles = StyleSheet.create({
 });
 ```
 
+> CodeSandbox: https://codesandbox.io/s/react-native-code-highligher-knfsyx?file=/src/App.js
+
 ## Screenshots
 
-![Image](assets/example.png?raw=true 'Image')
+![Image](assets/example.png?raw=true "Image")
 
 ## Contributing
 
@@ -91,6 +97,7 @@ MIT
 ---
 
 ## Built using
+
 - [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
 - [react-syntax-highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter)
 - [trim-newlines](https://github.com/sindresorhus/trim-newlines)
