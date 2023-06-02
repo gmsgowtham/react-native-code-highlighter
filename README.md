@@ -33,7 +33,7 @@ yarn add -D @types/react-syntax-highlighter
 | hljsStyle                                                                                                   	| Highlight.js style imported from `react-syntax-highlighter/dist/esm/styles/hljs` 	| `{ [key: string]: React.CSSProperties }` 	| false    	|
 | containerStyle                                                                                              	| `containerStyle` for the underlying `ScrollView`                                 	| `StyleProp<br><ViewStyle>`               	| true     	|
 | textStyle                                                                                                   	| Style for the text components. Note: `color` property will be overridden         	| `StyleProp<TextStyle>                    	| true     	|
-| [react-syntax-highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter) Props 	      | Props from supported by react-syntax-highlighter                       	|                                          	          |          	|
+| [react-syntax-highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter) Props 	      | Props supported by react-syntax-highlighter                       	              |                                          	|          	|
 
 
 ### Example
