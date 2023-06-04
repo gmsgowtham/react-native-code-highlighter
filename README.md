@@ -1,11 +1,13 @@
 # react-native-code-highlighter
 
-Code/Syntax highlighter for React Native. Inspired by [react-native-syntax-highlighter](https://github.com/conorhastings/react-native-syntax-highlighter), using [react-syntax-highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter)
 ![GitHub](https://img.shields.io/github/license/gmsgowtham/react-native-code-highlighter)
 [![CI](https://github.com/gmsgowtham/react-native-code-highlighter/actions/workflows/ci.yml/badge.svg)](https://github.com/gmsgowtham/react-native-code-highlighter/actions/workflows/ci.yml)
 [![Coverage Status](https://coveralls.io/repos/github/gmsgowtham/react-native-code-highlighter/badge.svg?branch=main)](https://coveralls.io/github/gmsgowtham/react-native-code-highlighter?branch=main)
-![npm](https://img.shields.io/npm/v/react-native-code-highlighter)
-![npm](https://img.shields.io/npm/dw/react-native-code-highlighter)
+[![npm](https://img.shields.io/npm/v/react-native-code-highlighter)](https://www.npmjs.com/package/react-native-code-highlighter)
+[![npm](https://img.shields.io/npm/dw/react-native-code-highlighter)](https://www.npmjs.com/package/react-native-code-highlighter)
+
+
+Code/Syntax highlighter for React Native. Inspired by [react-native-syntax-highlighter](https://github.com/conorhastings/react-native-syntax-highlighter), using [react-syntax-highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter)
 
 ## Installation
 
@@ -102,3 +104,6 @@ MIT
 - [react-syntax-highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter)
 - [trim-newlines](https://github.com/sindresorhus/trim-newlines)
 - [css-to-react-native](https://github.com/styled-components/css-to-react-native)
+
+
+<a href="https://www.buymeacoffee.com/gmsgowtham" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="width: 120px !important;" ></a>
