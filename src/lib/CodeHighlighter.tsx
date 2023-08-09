@@ -7,6 +7,7 @@ import {
 	type TextStyle,
 	type StyleProp,
 	StyleSheet,
+	type ScrollViewProps,
 } from "react-native";
 import SyntaxHighlighter, {
 	type SyntaxHighlighterProps,
@@ -22,6 +23,7 @@ export interface CodeHighlighterProps extends SyntaxHighlighterProps {
 	hljsStyle: ReactStyle;
 	containerStyle?: StyleProp<ViewStyle>;
 	textStyle?: StyleProp<TextStyle>;
+	scrollViewProps?: ScrollViewProps;
 }
 
 export const CodeHighlighter: FunctionComponent<CodeHighlighterProps> = ({
@@ -29,6 +31,7 @@ export const CodeHighlighter: FunctionComponent<CodeHighlighterProps> = ({
 	containerStyle,
 	textStyle,
 	hljsStyle,
+	scrollViewProps,
 	...rest
 }) => {
 	const stylesheet: HighlighterStyleSheet = useMemo(
@@ -70,6 +73,7 @@ export const CodeHighlighter: FunctionComponent<CodeHighlighterProps> = ({
 		const { rows } = props;
 		return (
 			<ScrollView
+				{...scrollViewProps}
 				horizontal
 				contentContainerStyle={[stylesheet.hljs, containerStyle]}
 			>
