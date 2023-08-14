@@ -3154,10 +3154,10 @@
   dependencies:
     defer-to-connect "^2.0.1"
 
-"@testing-library/react-native@12.2.0":
-  version "12.2.0"
-  resolved "https://registry.yarnpkg.com/@testing-library/react-native/-/react-native-12.2.0.tgz#72d4feed1c21c9c089f6184a1564fb46c22bb9b1"
-  integrity sha512-0r9xCPfy8+IiB8en5viKjiOx0aVUoCOZDUH8lET0R8SEb4/R2sdCTO4UIZjpm9OIA+j5MKt6YSfc4yjF72hE8g==
+"@testing-library/react-native@12.2.1":
+  version "12.2.1"
+  resolved "https://registry.yarnpkg.com/@testing-library/react-native/-/react-native-12.2.1.tgz#c218397da1688e0908ee461f1803311cd8f440eb"
+  integrity sha512-zs9m4PbLyeWsXnkh+EqpZg1KfYW5d8aAQKDFkd3DVB+NmWR5Tx8ymdugyrH5ciirP0DdV3E6Ta0qO55j+zSg7Q==
   dependencies:
     pretty-format "^29.0.0"
 
