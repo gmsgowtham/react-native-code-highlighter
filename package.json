@@ -72,7 +72,7 @@
     "metro-react-native-babel-preset": "0.77.0",
     "pod-install": "0.1.38",
     "react": "18.2.0",
-    "react-native": "0.72.3",
+    "react-native": "0.72.4",
     "react-native-builder-bob": "0.21.3",
     "react-test-renderer": "18.2.0",
     "release-it": "16.1.5",
