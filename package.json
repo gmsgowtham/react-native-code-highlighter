@@ -40,7 +40,9 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "code-hightlighter",
+    "syntax-highlighter"
   ],
   "repository": "https://github.com/gmsgowtham/react-native-code-highlighter",
   "author": "Gowtham G <webappsbygowtham@gmail.com> (https://github.com/gmsgowtham)",
