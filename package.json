@@ -41,6 +41,7 @@
     "react-native",
     "ios",
     "android",
+    "web",
     "code-hightlighter",
     "syntax-highlighter"
   ],
