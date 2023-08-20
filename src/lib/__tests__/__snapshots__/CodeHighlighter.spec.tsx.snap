@@ -25,6 +25,7 @@ exports[`CodeHighlighter render 1`] = `
             "color": "#abb2bf",
           },
           undefined,
+          undefined,
         ]
       }
       horizontal={true}
@@ -101,6 +102,7 @@ exports[`CodeHighlighter render with styles 1`] = `
             "backgroundColor": "#000",
             "padding": 8,
           },
+          undefined,
         ]
       }
       horizontal={true}

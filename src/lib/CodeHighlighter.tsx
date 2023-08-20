@@ -21,17 +21,20 @@ import {
 
 export interface CodeHighlighterProps extends SyntaxHighlighterProps {
 	hljsStyle: ReactStyle;
-	containerStyle?: StyleProp<ViewStyle>;
 	textStyle?: StyleProp<TextStyle>;
 	scrollViewProps?: ScrollViewProps;
+	/**
+	 * @deprecated, Use scrollViewProps.contentContainerStyle instead
+	 */
+	containerStyle?: StyleProp<ViewStyle>;
 }
 
 export const CodeHighlighter: FunctionComponent<CodeHighlighterProps> = ({
 	children,
-	containerStyle,
 	textStyle,
 	hljsStyle,
 	scrollViewProps,
+	containerStyle,
 	...rest
 }) => {
 	const stylesheet: HighlighterStyleSheet = useMemo(
@@ -75,7 +78,11 @@ export const CodeHighlighter: FunctionComponent<CodeHighlighterProps> = ({
 			<ScrollView
 				{...scrollViewProps}
 				horizontal
-				contentContainerStyle={[stylesheet.hljs, containerStyle]}
+				contentContainerStyle={[
+					stylesheet.hljs,
+					scrollViewProps?.contentContainerStyle,
+					containerStyle,
+				]}
 			>
 				<View>{renderNode(rows)}</View>
 			</ScrollView>

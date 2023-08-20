@@ -71,6 +71,9 @@ export default function App() {
 					textStyle={styles.text}
 					hljsStyle={hljsStyle}
 					language="typescript"
+					scrollViewProps={{
+						contentContainerStyle: styles.codeContainer,
+					}}
 				>
 					{CODE_STR}
 				</CodeHighlighter>
@@ -82,7 +85,6 @@ export default function App() {
 const styles = StyleSheet.create({
 	codeContainer: {
 		paddingHorizontal: 16,
-		minWidth: "100%",
 	},
 	text: {
 		fontSize: 16,
