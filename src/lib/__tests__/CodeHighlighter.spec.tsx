@@ -5,7 +5,7 @@ import { atomOneDarkReasonable as hljsStyle } from "react-syntax-highlighter/dis
 describe(CodeHighlighter, () => {
 	it("render", async () => {
 		const code = `const hello = "world"`;
-		const r = await render(
+		const r = render(
 			<CodeHighlighter hljsStyle={hljsStyle} language="typescript">
 				{code}
 			</CodeHighlighter>,
@@ -24,10 +24,12 @@ describe(CodeHighlighter, () => {
       const hello = "world";
       let foo = "bar";
       `;
-		const r = await render(
+		const r = render(
 			<CodeHighlighter
 				hljsStyle={hljsStyle}
-				containerStyle={{ padding: 8, backgroundColor: "#000" }}
+				scrollViewProps={{
+					contentContainerStyle: { padding: 8, backgroundColor: "#000" },
+				}}
 				textStyle={{ color: "#fff", fontSize: 12 }}
 				language="javascript"
 			>
