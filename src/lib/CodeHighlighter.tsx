@@ -24,7 +24,7 @@ export interface CodeHighlighterProps extends SyntaxHighlighterProps {
 	textStyle?: StyleProp<TextStyle>;
 	scrollViewProps?: ScrollViewProps;
 	/**
-	 * @deprecated, Use scrollViewProps.contentContainerStyle instead
+	 * @deprecated Use scrollViewProps.contentContainerStyle instead
 	 */
 	containerStyle?: StyleProp<ViewStyle>;
 }
