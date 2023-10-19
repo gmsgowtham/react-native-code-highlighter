@@ -67,7 +67,7 @@
     "@types/react": "18.2.29",
     "@types/react-native": "0.72.5",
     "@types/react-syntax-highlighter": "15.5.9",
-    "@types/react-test-renderer": "18.0.4",
+    "@types/react-test-renderer": "18.0.5",
     "commitlint": "17.8.0",
     "cosmiconfig": "8.3.6",
     "del-cli": "5.1.0",
