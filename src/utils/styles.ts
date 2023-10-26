@@ -1,6 +1,6 @@
+import transform, { type StyleTuple } from "css-to-react-native";
 import type { CSSProperties } from "react";
 import type { TextStyle } from "react-native";
-import transform, { type StyleTuple } from "css-to-react-native";
 
 export type HighlighterStyleSheet = { [key: string]: TextStyle };
 export type ReactStyle = Record<string, CSSProperties>;
