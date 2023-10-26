@@ -1,6 +1,6 @@
-import CodeHighlighter from "../CodeHighlighter";
 import { render, screen } from "@testing-library/react-native";
 import { atomOneDarkReasonable as hljsStyle } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import CodeHighlighter from "../CodeHighlighter";
 
 describe(CodeHighlighter, () => {
 	it("render", async () => {

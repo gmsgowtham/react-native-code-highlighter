@@ -1,22 +1,22 @@
-import React, { useMemo, type FunctionComponent, type ReactNode } from "react";
+import React, { type FunctionComponent, type ReactNode, useMemo } from "react";
 import {
-	Text,
-	View,
 	ScrollView,
-	type ViewStyle,
-	type TextStyle,
+	type ScrollViewProps,
 	type StyleProp,
 	StyleSheet,
-	type ScrollViewProps,
+	Text,
+	type TextStyle,
+	View,
+	type ViewStyle,
 } from "react-native";
 import SyntaxHighlighter, {
 	type SyntaxHighlighterProps,
 } from "react-syntax-highlighter";
 import { trimNewlines } from "trim-newlines";
 import {
-	getRNStylesFromHljsStyle,
 	type HighlighterStyleSheet,
 	type ReactStyle,
+	getRNStylesFromHljsStyle,
 } from "./../utils/styles";
 
 export interface CodeHighlighterProps extends SyntaxHighlighterProps {
