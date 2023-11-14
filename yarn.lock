@@ -3222,10 +3222,10 @@
   dependencies:
     defer-to-connect "^2.0.1"
 
-"@testing-library/react-native@12.3.1":
-  version "12.3.1"
-  resolved "https://registry.yarnpkg.com/@testing-library/react-native/-/react-native-12.3.1.tgz#7ac584711f214c7a1702fa4f637a9b3b22f0d093"
-  integrity sha512-nSd+trdQv8gbTSiAbjROVW9p7VZ6xhoy3qKy0q6vdnbzJCQlkKN2SzhZe92/evgu/aJZj575dajxuE37EcHA/Q==
+"@testing-library/react-native@12.3.3":
+  version "12.3.3"
+  resolved "https://registry.yarnpkg.com/@testing-library/react-native/-/react-native-12.3.3.tgz#5fe55f179cc0a27212d137dbe2ced16212d6c67c"
+  integrity sha512-T1+inXjX0Otj0zrK7z3GcaLMRVK99cy604mXN9bHE3Q02dTOYaDHu6ZfQw5l3Rnfb1MLueMkh/6grx2enJD8zQ==
   dependencies:
     jest-matcher-utils "^29.7.0"
     pretty-format "^29.7.0"
