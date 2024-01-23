@@ -80,7 +80,7 @@
     "react-native-builder-bob": "0.23.2",
     "react-test-renderer": "18.2.0",
     "release-it": "17.0.0",
-    "typescript": "5.2.2"
+    "typescript": "5.3.3"
   },
   "resolutions": {
     "@types/react": "18.2.37"
