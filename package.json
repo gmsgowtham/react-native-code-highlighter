@@ -64,7 +64,7 @@
     "@release-it/conventional-changelog": "8.0.1",
     "@testing-library/react-native": "12.4.0",
     "@types/jest": "29.5.8",
-    "@types/node": "20.9.0",
+    "@types/node": "20.11.5",
     "@types/react": "18.2.37",
     "@types/react-native": "0.72.6",
     "@types/react-syntax-highlighter": "15.5.10",
