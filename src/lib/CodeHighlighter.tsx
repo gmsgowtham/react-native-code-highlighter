@@ -84,7 +84,7 @@ export const CodeHighlighter: FunctionComponent<CodeHighlighterProps> = ({
 					containerStyle,
 				]}
 			>
-				<View>{renderNode(rows)}</View>
+				<View onStartShouldSetResponder={() => true}>{renderNode(rows)}</View>
 			</ScrollView>
 		);
 	};
