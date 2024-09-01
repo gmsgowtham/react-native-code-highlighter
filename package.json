@@ -67,7 +67,7 @@
     "@types/node": "20.16.3",
     "@types/react": "18.3.5",
     "@types/react-native": "0.72.8",
-    "@types/react-syntax-highlighter": "15.5.11",
+    "@types/react-syntax-highlighter": "15.5.13",
     "@types/react-test-renderer": "18.3.0",
     "commitlint": "19.4.1",
     "cosmiconfig": "9.0.0",
