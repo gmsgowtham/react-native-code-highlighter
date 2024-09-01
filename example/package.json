@@ -17,7 +17,7 @@
     "react-native-safe-area-context": "4.5.0",
     "react-native-web": "~0.18.10",
     "react-syntax-highlighter": "15.5.0",
-    "webpack": "5.84.1"
+    "webpack": "5.94.0"
   },
   "devDependencies": {
     "@babel/core": "7.22.1",
