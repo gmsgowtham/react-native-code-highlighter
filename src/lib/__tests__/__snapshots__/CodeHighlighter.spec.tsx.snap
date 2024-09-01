@@ -31,7 +31,9 @@ exports[`CodeHighlighter render 1`] = `
       horizontal={true}
     >
       <View>
-        <View>
+        <View
+          onStartShouldSetResponder={[Function]}
+        >
           <Text
             style={
               {
@@ -108,7 +110,9 @@ exports[`CodeHighlighter render with styles 1`] = `
       horizontal={true}
     >
       <View>
-        <View>
+        <View
+          onStartShouldSetResponder={[Function]}
+        >
           <Text
             style={
               {
