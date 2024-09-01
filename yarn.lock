@@ -2499,10 +2499,10 @@
   dependencies:
     chalk "^4.1.0"
 
-"@evilmartians/lefthook@1.6.1":
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-1.6.1.tgz#be4ce28727d2b600bc8f2e242e6fd06bda35abed"
-  integrity sha512-4E35gOuECaf/+DaA0m1Q1U3BnaQclAUgK2UOYPyQOU0mCnvbMIqNJFiq2ArYuECEUIkTtAjoIzs1xkNFqUaOLQ==
+"@evilmartians/lefthook@1.7.14":
+  version "1.7.14"
+  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-1.7.14.tgz#3fce9d4c91c23232f02bab592ce914713880bb8d"
+  integrity sha512-0FPRdmd7hIZXjTQKQjLnmqxx4xGRIM1oGN9pJ4PyI14tOqEAwstmLIbauqQpTVTj3MAPeylsQVXh9RGaq/F2/A==
 
 "@hapi/hoek@^9.0.0":
   version "9.3.0"
