@@ -7831,10 +7831,10 @@ pkg-dir@^4.2.0:
   dependencies:
     find-up "^4.0.0"
 
-pod-install@0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/pod-install/-/pod-install-0.2.2.tgz#3375026ff1e317f87140b8f51ed955084d0c35e5"
-  integrity sha512-NgQpKiuWZo8mWU+SVxmrn+ARy9+fFYzW53ze6CDTo70u5Ie8AVSn7FqolDC/c7+N4/kQ1BldAnXEab6SNYA8xw==
+pod-install@0.3.4:
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/pod-install/-/pod-install-0.3.4.tgz#8d6ad22a3e42d8014ee0363378d4bd782b8152d5"
+  integrity sha512-I6ObV36HNvbM5/QI8IEZ61ot41p8eBB9Zm0Bc9Sw99v9JzdNvwxg6IS2ZbZbJ0KvLWnUCIL1mIiFhJTLVF5r1w==
 
 postcss-value-parser@^4.0.2:
   version "4.2.0"
