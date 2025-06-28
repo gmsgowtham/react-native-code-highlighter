@@ -60,7 +60,7 @@
     "@babel/preset-env": "7.26.9",
     "@biomejs/biome": "1.9.4",
     "@commitlint/config-conventional": "19.8.0",
-    "@evilmartians/lefthook": "1.7.18",
+    "@evilmartians/lefthook": "1.11.14",
     "@release-it/conventional-changelog": "10.0.0",
     "@testing-library/react-native": "12.7.2",
     "@types/jest": "29.5.14",
