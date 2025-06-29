@@ -86,7 +86,7 @@
     "@types/react": "18.3.23"
   },
   "peerDependencies": {
-    "react": "16.8.6 || ^17.0.0 || ^18.0.0",
+    "react": ">=16.8.6",
     "react-native": ">=0.60.0",
     "react-syntax-highlighter": ">=15.5.0"
   },
