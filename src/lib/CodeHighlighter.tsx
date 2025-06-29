@@ -14,9 +14,9 @@ import SyntaxHighlighter, {
 } from "react-syntax-highlighter";
 import { trimNewlines } from "trim-newlines";
 import {
+	getRNStylesFromHljsStyle,
 	type HighlighterStyleSheet,
 	type ReactStyle,
-	getRNStylesFromHljsStyle,
 } from "./../utils/styles";
 
 export interface CodeHighlighterProps extends SyntaxHighlighterProps {

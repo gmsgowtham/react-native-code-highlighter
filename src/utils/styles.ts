@@ -3,7 +3,9 @@ import type { CSSProperties } from "react";
 import type { TextStyle } from "react-native";
 
 export type HighlighterStyleSheet = { [key: string]: TextStyle };
-export type ReactStyle = Record<string, CSSProperties>;
+export type ReactStyle = {
+	[key: string]: React.CSSProperties;
+};
 
 const ALLOWED_STYLE_PROPERTIES: Record<string, boolean> = {
 	color: true,

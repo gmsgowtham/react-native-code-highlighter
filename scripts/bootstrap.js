@@ -1,6 +1,6 @@
-const os = require("os");
-const path = require("path");
-const child_process = require("child_process");
+const os = require("node:os");
+const path = require("node:path");
+const child_process = require("node:child_process");
 
 const root = path.resolve(__dirname, "..");
 const args = process.argv.slice(2);
