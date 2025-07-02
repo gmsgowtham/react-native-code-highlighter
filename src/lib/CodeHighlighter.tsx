@@ -23,13 +23,14 @@ export interface CodeHighlighterProps extends SyntaxHighlighterProps {
 	hljsStyle: ReactStyle;
 	textStyle?: StyleProp<TextStyle>;
 	scrollViewProps?: ScrollViewProps;
+	children: string | string[];
 	/**
 	 * @deprecated Use scrollViewProps.contentContainerStyle instead
 	 */
 	containerStyle?: StyleProp<ViewStyle>;
 }
 
-export const CodeHighlighter: FunctionComponent<CodeHighlighterProps> = ({
+const CodeHighlighter: FunctionComponent<CodeHighlighterProps> = ({
 	children,
 	textStyle,
 	hljsStyle,
