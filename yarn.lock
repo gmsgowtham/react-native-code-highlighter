@@ -2974,10 +2974,10 @@
     "@types/semver" "^7.5.5"
     semver "^7.5.2"
 
-"@evilmartians/lefthook@1.11.14":
-  version "1.11.14"
-  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-1.11.14.tgz#34d9544b605b3073b8552eb376ebdf7730d7595f"
-  integrity sha512-vh6lqXVwh7uhI5C/gKB7InW8RyMFYXN27U4Hlum8ZBcDrOviF9fmcBJf4C6ZboWkD3j8v1qp4psc3bwynhPlTQ==
+"@evilmartians/lefthook@1.13.6":
+  version "1.13.6"
+  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-1.13.6.tgz#f715d8800dd942144f25020ae5c286859b104652"
+  integrity sha512-79vplrUBWL4Fkt59YkEBdSpqBVhNrY8t5+jEp+wX5QbsmbQLcSULqwS7FmbNRyECa2LWMrUWpe6ENIfNwB4jiw==
 
 "@hapi/hoek@^9.0.0":
   version "9.3.0"
