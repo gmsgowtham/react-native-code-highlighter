@@ -144,7 +144,7 @@
 	},
 	"dependencies": {
 		"css-to-react-native": "3.2.0",
-		"react-syntax-highlighter": "15.6.1",
+		"react-syntax-highlighter": "15.6.6",
 		"trim-newlines": "5.0.0"
 	}
 }
