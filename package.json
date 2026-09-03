@@ -58,7 +58,7 @@
 	"devDependencies": {
 		"@babel/core": "7.29.7",
 		"@babel/preset-env": "7.29.7",
-		"@biomejs/biome": "2.5.6",
+		"@biomejs/biome": "2.5.12",
 		"@commitlint/config-conventional": "19.8.1",
 		"@evilmartians/lefthook": "1.13.6",
 		"@release-it/conventional-changelog": "10.0.1",
