@@ -65,7 +65,7 @@
 		"@testing-library/react-native": "13.3.3",
 		"@types/jest": "29.5.14",
 		"@types/node": "22.20.1",
-		"@types/react": "18.3.23",
+		"@types/react": "18.3.31",
 		"@types/react-native": "0.72.8",
 		"@types/react-syntax-highlighter": "15.5.13",
 		"@types/react-test-renderer": "19.1.0",
@@ -83,7 +83,7 @@
 		"typescript": "5.9.3"
 	},
 	"resolutions": {
-		"@types/react": "18.3.23"
+		"@types/react": "18.3.31"
 	},
 	"peerDependencies": {
 		"react": ">=16.8.6",
