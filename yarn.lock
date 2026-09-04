@@ -3196,14 +3196,14 @@
   dependencies:
     "@sinonjs/commons" "^3.0.0"
 
-"@testing-library/react-native@13.3.3":
-  version "13.3.3"
-  resolved "https://registry.yarnpkg.com/@testing-library/react-native/-/react-native-13.3.3.tgz#4bf02911c4e18075df40b5de0e029c209fb45bda"
-  integrity sha512-k6Mjsd9dbZgvY4Bl7P1NIpePQNi+dfYtlJ5voi9KQlynxSyQkfOgJmYGCYmw/aSgH/rUcFvG8u5gd4npzgRDyg==
+"@testing-library/react-native@14.0.1":
+  version "14.0.1"
+  resolved "https://registry.yarnpkg.com/@testing-library/react-native/-/react-native-14.0.1.tgz#3f6c64f7174715818190f283e12c375eb9e7bc0a"
+  integrity sha512-2r2e2y8SkUNRWKRXlUGqDYunB+AkbdXUPn49Bs5rpv9oxRb0K3USBVugbPbAKJjfj4w5Ba91NJ8LcQCZyopUZA==
   dependencies:
-    jest-matcher-utils "^30.0.5"
+    jest-matcher-utils "^30.4.1"
     picocolors "^1.1.1"
-    pretty-format "^30.0.5"
+    pretty-format "^30.4.1"
     redent "^3.0.0"
 
 "@tootallnate/quickjs-emscripten@^0.23.0":
@@ -5907,7 +5907,7 @@ jest-matcher-utils@^29.7.0:
     jest-get-type "^29.6.3"
     pretty-format "^29.7.0"
 
-jest-matcher-utils@^30.0.5:
+jest-matcher-utils@^30.4.1:
   version "30.5.1"
   resolved "https://registry.yarnpkg.com/jest-matcher-utils/-/jest-matcher-utils-30.5.1.tgz#93e64fa4362c44d68cdc7a5590a2ccf6972083f4"
   integrity sha512-aroZVqwOz/wC2y6pC+obgFWKV9viaQWQTTSB6W5H55+egtUczIfXR/rxExTv92xD/ADYwpqaYfVWx1aqwKg7FA==
@@ -7435,7 +7435,7 @@ presentable-error@^0.0.1:
   resolved "https://registry.yarnpkg.com/presentable-error/-/presentable-error-0.0.1.tgz#6d2579d397b1384a0cc733b36375c2c8755d53c6"
   integrity sha512-E6rsNU1QNJgB3sjj7OANinGncFKuK+164sLXw1/CqBjj/EkXSoSdHCtWQGBNlREIGLnL7IEUEGa08YFVUbrhVg==
 
-pretty-format@30.5.1, pretty-format@^30.0.5:
+pretty-format@30.5.1, pretty-format@^30.4.1:
   version "30.5.1"
   resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-30.5.1.tgz#0dda910a75d12346b771977b1f328517b9e846d4"
   integrity sha512-byhRAPguVKMQIj4kjJwJ5lAskVhfuiSdiYl/aLTWpgkGEmic2jYhJh1yE9ih8Ox44Xg9ccCT11/S6QrzSJuNrg==
