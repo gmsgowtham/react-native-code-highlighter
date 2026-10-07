@@ -2125,10 +2125,10 @@
     "@simple-libs/stream-utils" "^1.2.0"
     semver "^7.5.2"
 
-"@evilmartians/lefthook@1.13.6":
-  version "1.13.6"
-  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-1.13.6.tgz#f715d8800dd942144f25020ae5c286859b104652"
-  integrity sha512-79vplrUBWL4Fkt59YkEBdSpqBVhNrY8t5+jEp+wX5QbsmbQLcSULqwS7FmbNRyECa2LWMrUWpe6ENIfNwB4jiw==
+"@evilmartians/lefthook@2.1.17":
+  version "2.1.17"
+  resolved "https://registry.yarnpkg.com/@evilmartians/lefthook/-/lefthook-2.1.17.tgz#ea786c82bf38548e49c50617a1a446f3f1137f3a"
+  integrity sha512-l8cnUMccARougwEAkFNmfY5UtTLMN0dva4u+oB45pXX+RcGLC5Bq0f9Vj4oNK4Yhl+b6yKPcT2W14rYVnk4EVA==
 
 "@hapi/hoek@^9.0.0":
   version "9.3.0"
