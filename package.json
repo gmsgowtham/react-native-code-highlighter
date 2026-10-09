@@ -62,7 +62,7 @@
 		"@commitlint/config-conventional": "19.8.1",
 		"@evilmartians/lefthook": "2.2.1",
 		"@release-it/conventional-changelog": "10.0.6",
-		"@testing-library/react-native": "13.3.3",
+		"@testing-library/react-native": "14.1.0",
 		"@types/jest": "29.5.14",
 		"@types/node": "22.20.1",
 		"@types/react": "18.3.31",
